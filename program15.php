@@ -1,5 +1,4 @@
-<?php
-echo'<html>
+<html>
 <body>
 <h1>Registration form</h1>
 <form action = ""method="POST">
@@ -8,6 +7,9 @@ Username: <input type="text"name="username"><br>
 Password: <input type="text"name="pass"><br><br>
 Confirm Password: <input type="text"name="cpass"><br><br>
 <input type="submit"value="Register">
+</form>
+</body>
+</html>
 <?php
 if (empty($_POST["username"]) ||
 empty($_POST["email"]) ||
@@ -24,8 +26,4 @@ else
 {
 die("Succesfull");
 }
-?>
-</form>
-</body>
-</html>';
 ?>
